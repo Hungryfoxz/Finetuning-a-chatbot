@@ -24,27 +24,27 @@ The project includes:
 ## 📦 Installation
 
 1. **Clone the repository**
-   ```bash
-     git clone https://github.com/Hungryfoxz/Finetuning-a-chatbot.git
-     cd library-chatbot
-   ```
+```bash
+git clone https://github.com/Hungryfoxz/Finetuning-a-chatbot.git
+cd library-chatbot
+```
 2. **Create a virtual environment**
-   ```bash
-      python -m venv venv
-      source venv/bin/activate        # On Linux/macOS
-      # or .\venv\Scripts\activate   # On Windows
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate        # On Linux/macOS
+# or .\venv\Scripts\activate   # On Windows
+```
 3. **Install dependencies**
-   ```bash
-     pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 ## 🧠 Training the Model (Optional)
-The repository includes a pre‑saved adapter in ```./llama32_library_chatbot/adapter```.
+
 If you want to retrain the model yourself, run:
-  ```bash
-    python finetune.py
-  ```
+```bash
+python finetune.py
+```
 
 Training time on a MacBook Air M2: ~10 minutes for 3 epochs.
 After training, the adapter and tokenizer are saved to ```./llama32_library_chatbot/adapter.```
@@ -52,9 +52,9 @@ After training, the adapter and tokenizer are saved to ```./llama32_library_chat
 ## 💬 Running the Chatbot
 ### Option 1 – Streamlit Web UI (recommended)
 Launch the full graphical interface:
-  ```bash
-    streamlit run app.py
-  ```
+```bash
+streamlit run app.py
+```
 Then open your browser at ```http://localhost:8501```
 
 **Features:**
@@ -65,9 +65,9 @@ Then open your browser at ```http://localhost:8501```
 
 ### Option 2 – Command‑line interface
 For quick testing or headless use:
-  ```bash 
-    python inference.py
-  ```
+```bash 
+python inference.py
+```
 Type your questions, press Enter, and type ```quit``` to exit.
 
 
