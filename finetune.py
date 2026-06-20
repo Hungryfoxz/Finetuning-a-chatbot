@@ -22,7 +22,7 @@ DATASET_NAME = "hungryfoxz/LibraryFAQ1000"
 OUTPUT_DIR = "./llama32_library_chatbot"
 
 # Optional: login to Hugging Face (uncomment and add your token if needed)
-# login("your_hf_token_here")
+# login("your_hf_token_here") #hf_kHrxPbYIITeecFLZUqKGftGRJcHAsXcod*
 
 # Device setup (MPS for Apple Silicon, else CPU)
 device = "mps" if torch.backends.mps.is_available() else "cpu"
